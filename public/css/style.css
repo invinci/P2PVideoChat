@@ -1,0 +1,133 @@
+body,html{
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 0;
+  margin: 0;
+  background-image:
+    linear-gradient(
+      to top right,
+      #00e184, #0064f6
+    );
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+}
+.status{
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+}
+.btn{
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 100%;
+}
+.window{
+  position: relative;
+}
+.videocontainer{
+  width: 500px;
+  height: 340px;
+  display: block;
+  box-shadow: 0 0px 5px #333;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+  background-color: #fff;
+}
+.videocontainer video{
+  width: 510px;
+  height: auto;
+}
+.videocontainer .childVideo{
+    position: absolute;
+    width: 140px;
+    height: 85px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0px 5px #333;
+    border: 2px solid #fff;
+    background-color: #fff;
+    overflow: hidden;
+}
+.videocontainer .childVideo video{
+  width: 140px;
+  height: auto;
+}
+
+.hidden{
+  display: none;
+}
+.loading .portrait{
+  display: block;
+  margin: auto;
+  width: 248px;
+  height: 248px;
+  position: relative;
+}
+
+
+.loading .portrait .display video{
+  width: 200px;
+  height: auto;
+  position: absolute;
+  left: -25px;
+}
+.loading.hidden .portrait .display{
+    border-radius: 10%;
+}
+.loading .portrait .display{
+  border-radius: 100%;
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  z-index: 2;
+  position: absolute;
+  transition-duration: 0.5s;
+  left: 0;
+  right: 0;
+  top: 47px;
+  margin: auto;
+  border: 3px solid #fff;
+}
+.circle {
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+    text-align: center;
+
+    border: 4px solid #fff;
+    border-radius: 100%;
+
+    -webkit-transform: scale( 0.6 );
+    -moz-transform: scale( 0.6 );
+    -o-transform: scale( 0.6 );
+    -ms-transform: scale( 0.6 );
+    transform: scale( 0.6 );
+    margin: auto;
+
+    width: 240px;
+    height: 240px;
+    line-height: 240px;
+}
+.ripple1{
+    animation: ripple 1s infinite;
+}
+@keyframes ripple{
+  0%   { transform: scale( 0.6 );  }
+  100%   { transform: scale( 1 ); vertical-align: middle; border-color: rgba(255,255,255,0); }
+}
